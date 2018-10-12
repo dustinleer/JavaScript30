@@ -84,7 +84,36 @@ const oldest = inventors.sort(function(a, b) {
 console.table(oldest);
 
 // 6. create a list of Boulevards in Paris that contain 'de' anywhere in the name
-// https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+/*******************************************************************
+ * THIS ONLY WORKS IN THE CONSOLE ON THE WIKI PAGE
+ * https://en.wikipedia.org/wiki/Category:Boulevards_in_Paris
+*******************************************************************/
+//const category = document.querySelector('.mw-category');
+/***************************************
+ * ✌️ Two ways to convert to an array
+***************************************/
+/* ☝️ FIRST - use Array.from - more readable */
+//const links = Array.from(category.querySelectorAll('a'));
+
+/* ✌️ SECOND - ES6 dot spread */
+// const links = [...(category.querySelectorAll('a')];
+
+// const de = links
+// 			.map(link => link.textContent);
+// 			.filter(streetName => streetName.includes('de'));
+/****************************************************************
+ * FINISHED CODE TO USE IN THE CONSOLE,
+ * WILL NEED TO TYPE IN YOUR CONST FOR A RETURN VALUE
+*****************************************************************/
+/*
+const category = document.querySelector('.mw-category');
+const links = Array.from(category.querySelectorAll('a'));
+
+const de = links
+	.map(link => link.textContent)
+	.filter(streetName => streetName.includes('de'));
+*/
+
 
 
 // 7. sort Exercise
