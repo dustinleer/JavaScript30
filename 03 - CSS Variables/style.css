@@ -10,11 +10,17 @@
 img {
     padding: var(--spacing);
     background: var(--base);
-    filter: blur(--blur);
+    filter: blur(var(--blur));
 }
 
 .hl {
     color: var(--base);
+}
+
+#base {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
 body {
