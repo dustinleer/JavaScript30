@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    background: #b7116f;
+    color: white;
+    font-family: 'helvetica neue', sans-serif;
+    font-weight: 100;
+    font-size: 50px;
+}
+
+a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    border-bottom: 10px solid white;
+}
