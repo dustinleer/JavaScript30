@@ -115,9 +115,25 @@ const de = links
 */
 
 
-
 // 7. sort Exercise
 // Sort the people alphabetically by last name
+// const abc = people.sort(function(lastOne, nextOne) {
+// 	const [aLast, aFirst] = lastOne.split(', ');
+// 	const [bLast, bFirst] = nextOne.split(', ');
+// 	// console.log(last, first);
+// 	return aLast > bLast ? -1 : 1;
+// });
+/********************************************************
+ *  ️️️☝️ Turns Proper Function into an Arrow Function ☝️
+********************************************************/
+const abc = people.sort((lastOne, nextOne) => {
+	const [aLast, aFirst] = lastOne.split(', ');
+	const [bLast, bFirst] = nextOne.split(', ');
+	// console.log(last, first);
+	return aLast > bLast ? -1 : 1;
+});
+console.log(abc);
+
 
 // 8. Reduce Exercise
 // Sum up the instances of each of these
